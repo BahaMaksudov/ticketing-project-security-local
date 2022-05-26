@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
+        <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cydeo</groupId>
-    <artifactId>ticketing-project-security-local</artifactId>
+    <artifactId>ticketing-project-orm</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ticketing-project-security-local</name>
-    <description>ticketing-project-security-local</description>
+    <name>ticketing-project-orm</name>
+    <description>ticketing-project-orm</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -32,14 +32,15 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-            <version>2.6.7</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
