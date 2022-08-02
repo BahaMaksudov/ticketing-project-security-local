@@ -11,7 +11,6 @@ import java.util.List;
 
 public class UserPrincipal implements UserDetails {
 
-
     private User user;
 
     public UserPrincipal(User user) {
@@ -58,5 +57,9 @@ public class UserPrincipal implements UserDetails {
     @Override
     public boolean isEnabled() {
         return this.user.isEnabled();
+    }
+
+    public Long getId() {
+        return this.user.getId();
     }
 }
